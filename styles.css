@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* =============== */
+/*      Commons    */
+/* =============== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out !important;
+}
+
+/* =============== */
+/*      Header     */
+/* =============== */
+
+.header {
+  padding-top: 5px;
+  background-color: rgb(77, 187, 230);
+  color: white;
+  vertical-align: middle;
+}
+
+.header a {
+  color: white;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: #ff4d00;
+  font-weight: bold;
+}
+
+/* =============== */
+/*      Navbar     */
+/* =============== */
+
+.navbar {
+  background-color: #2b4e8e !important;
+  position: sticky !important;
+}
+
+.nav-item {
+  font-weight: bold !important;
+}
+
+.nav-item > a {
+  color: #fff !important;
+}
+
+.nav-item a:hover {
+  color: #f9a602 !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 102, 203);
+}
+
+/* =============== */
+/* Image Container */
+/* =============== */
+
+.image-container {
+  background-image: url("https://res.cloudinary.com/dvp9gkjpk/image/upload/v1712462475/page2_bbtqew.jpg");
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.image-container a {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .image-container {
+    height: 50vh;
+  }
+
+  .header a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+/* =============== */
+/*      Table Card     */
+/* =============== */
+
+.card-container {
+  text-align: center;
+  background: var(--bg-color);
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.top-btn {
+  width: 100px;
+  height: 90px;
+  background: #2b4e8e;
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 5%;
+  z-index: 999;
+}
+
+.btn-container {
+  width: 100%;
+}
+
+.animate {
+  animation: toptodown 2s ease;
+}
+
+@keyframes toptodown {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.btn1 {
+  width: 260px;
+  height: 60px;
+  background: #2b4e8e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.btn1:hover {
+  background: transparent;
+  border: 3px solid #2b4e8e;
+  color: #2b4e8e;
+}
+
+.btn2:hover {
+  background: #2b4e8e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn2 {
+  width: 260px;
+  height: 60px;
+  background: transparent;
+  border-radius: 5px;
+  border: 3px solid #2b4e8e;
+  color: #2b4e8e;
+  transition: 0.5s ease;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.bgcolor-secondary {
+  background: #2b4e8e;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+}
+
+.bgcolor-secondary i {
+  font-size: 7px;
+}
+
+.bgcolor-secondary a {
+  font-size: 13px;
+}
+
+.photo {
+  height: 60px;
+  width: 60px;
+}
+
+/* =============== */
+/*      Footer     */
+/* =============== */
+
+.footer {
+  background-color: #264581 !important;
+}
+
+.footer-logo {
+  width: 65%;
+  margin-bottom: 10px;
+}
+
+.footer-icons i {
+  font-size: x-large;
+}
+
+.footer-mail i {
+  font-size: large;
+  margin-right: 3px;
+}
+
+.footer h4 i {
+  font-size: larger;
+}
+
+.footer-mail a {
+  text-decoration: none;
+  font-size: larger;
+}
+
+.quick-links {
+  padding-left: 10px;
+  width: fit-content;
+}
+
+.quick-links li {
+  list-style: none;
+  font-size: large;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 3px;
+}
+
+.quick-links li a {
+  text-decoration: none;
+}
+
+.quick-links li:hover {
+  cursor: pointer;
+  transform: translateX(8px);
+}
+
+.footer-icon-glow {
+  transition: color 0.3s ease-in-out !important;
+}
+
+.footer-icon-glow:hover {
+  color: #f9a602 !important;
+}
+
+.footer-text-glow {
+  transition: color 0.3s ease-in-out !important;
+}
+
+.footer-text-glow:hover {
+  color: #f9a602 !important;
+}
+
+.footer-link-glow > i {
+  transition: color 0.3s ease-in-out !important;
+}
+
+.footer-link-glow:hover > i {
+  color: #f9a602 !important;
+}
+
+.footer-text-glow > a:hover {
+  color: #f9a602 !important;
+}
+
+.footer-li-glow:hover > * {
+  color: #f9a602 !important;
+}
+
+.footer-hr {
+  height: 3px;
+  background-color: #fff;
+}
